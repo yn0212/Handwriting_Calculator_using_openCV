@@ -2,7 +2,14 @@
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=footer)
 
 # :pushpin:Project Description
-- OpenCV를 활용해 사용자가 필기체로 입력한 수식을 계산해주는 계산기 프로그램이다.
+OpenCV를 활용해 사용자가 필기체로 입력한 수식을 계산해주는 계산기 프로그램이다.
+--------------------------------------------------
+### 사용 방법
+- 마우스 왼쪽 버튼 : 수식 쓰기
+- 마우스 가운데 버튼 : Ans버튼 끌어와 수식에서 사용하기
+-AC : 모두 삭제 
+-CE : 한개의 문자 삭제
+-Ans : 식의 값 Ans에 저장(마우스 왼쪽 클릭) , Ans 버튼 드래그해 식에서 사용(마우스 가운데 버튼 ) 
 
 # :pushpin:Project video
 
