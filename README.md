@@ -17,7 +17,7 @@ OpenCV를 활용해 사용자가 필기체로 입력한 수식을 계산해주�
 
 https://user-images.githubusercontent.com/105347300/185037897-1304241e-e89f-455f-bf7e-3eaab437dd1e.mp4
 
-<ans 드래그시 깜빡거림 수정 >
+<ans 드래그시 깜빡거림 코드 수정 완료 >
 
 youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 
