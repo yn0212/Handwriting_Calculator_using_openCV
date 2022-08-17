@@ -29,7 +29,7 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 계산기 구현 방법
 -----------------
 
--식을 후위표기법으로 바꾸기 --- > string calc1();
+### 식을 후위표기법으로 바꾸기 --- > string calc1();
 
 
 1. 숫자가 나오면 그대로 문자열에 입력한다.
@@ -44,7 +44,7 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 
 
 
--후위표기법 계산하기 --> double calc2(string str);
+### 후위표기법 계산하기 --> double calc2(string str);
 
 
 1.문자열 앞에서부터 ' ' 공백을 기준으로 끊기
