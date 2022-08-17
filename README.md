@@ -26,7 +26,7 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 # Project algorithm
 ![image](https://user-images.githubusercontent.com/105347300/185038520-ed0d36f8-6631-4ec4-b6e5-09933acd10f1.png)
 
--계산기 구현 방법
+- 계산기 구현 방법
 
 식을 후위표기법으로 바꾸기 --- > string calc1();
 
@@ -42,7 +42,7 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 
 
 
--후위표기법 계산하기 --> double calc2(string str);
+- 후위표기법 계산하기 --> double calc2(string str);
 
 1.문자열 앞에서부터 ' ' 공백을 기준으로 끊기
 
