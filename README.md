@@ -31,9 +31,21 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 - 계산기 기능 : 인식된 수식을 계산하여 결과를 출력하는 기능 ,ANS,CE,AC 기능
 
 # :pushpin:Project algorithm
-### 첫번째 구분 
+## 첫번째 구분 
 ![image](https://user-images.githubusercontent.com/105347300/185038520-ed0d36f8-6631-4ec4-b6e5-09933acd10f1.png)
 
+## 두번째 구분
+### :bulb: 소수점
+
+![image](https://user-images.githubusercontent.com/105347300/185043097-6ed8e4e3-fdd6-421f-9afc-67835cf20ad1.png)
+
+ x축에 수직으로 나눈 픽셀값이 255인 픽셀 개수의 평균값
+ 
+![image](https://user-images.githubusercontent.com/105347300/185043155-4b340789-907f-4a08-bfeb-fc672eedede3.png)
+
+- x축으로 나눈 구간 10개의 평균을 구함. --> double avg(vector<double> v)   -->평균값이 3이하
+- y축으로 나눈 구간 10개의 평균을 구함 -- > double avg(vector<double> v) --> 평균값이 2이하
+- 객체의 size가 50이하이면 true
 
 
 :paperclip:계산기 구현 방법 
