@@ -24,7 +24,7 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 - 계산기 기능 : 인식된 수식을 계산하여 결과를 출력하는 기능 ,ANS,CE,AC 기능
 
 # :pushpin:Project algorithm
-#### 첫번째 구분 
+### 첫번째 구분 
 ![image](https://user-images.githubusercontent.com/105347300/185038520-ed0d36f8-6631-4ec4-b6e5-09933acd10f1.png)
 
 
