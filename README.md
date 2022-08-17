@@ -42,7 +42,8 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 
 
 
-- 후위표기법 계산하기 --> double calc2(string str);
+후위표기법 계산하기 --> double calc2(string str);
+
 
 1.문자열 앞에서부터 ' ' 공백을 기준으로 끊기
 
