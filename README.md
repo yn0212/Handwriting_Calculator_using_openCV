@@ -57,4 +57,93 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 
 # 계산기 code
 -식을 후위표기법으로 변환
-<>
+'''
+    string calc1() {
+        //후위 표기법으로 만들기
+        vector<char> op;
+        string num = "";
+        //문자를 숫자로
+        int start = 0;
+        int ox = 0;
+        int i, num_cnt = 0;
+        for (i = 0; i < message.size(); i++) // 후위 표기법 만들기
+        {
+            if (((int)message[i] <= 57 && (int)message[i] > 47) && i == message.size() - 1) { // 맨마지막이고  숫자이면
+                num_cnt++;
+                string s = message.substr(start, num_cnt);// 숫자
+                num += s; //연산자 앞 숫자 자른 문자열 숫자로 바꿔서 넣기
+                num += " ";
+            }
+            else if (((int)message[i] <= 57 && (int)message[i] > 47) || message[i] == '.') { //숫자 이거나 소수점이면
+                num_cnt++;
+            }
+            else { // 연산자이면
+                if ((int)message[i - 1] <= 57 && (int)message[i - 1] > 47) { //연산자 앞이 숫자이면
+                    string s = message.substr(start, num_cnt);//연산자 앞 숫자
+                    num += s; //연산자 앞 숫자 자른 문자열 숫자로 바꿔서 넣기
+                    num += " "; // 구분
+                    num_cnt = 0;
+                }
+                start = i + 1; //연산자 뒷 숫자 
+                if (op.empty()) {
+                    op.push_back((char)message[i]);
+                }
+                else if (message[i] == '(' || message[i] == 'x' || message[i] == '/') {
+                    op.push_back((char)message[i]);
+                }
+                else if (message[i] == '+' || message[i] == '-') { //여는 괄호있으면  (위의 모든 연산자 출력, (없으면 벡터의 끝까지 출력 후 스택에push
+                    for (int j = 0; j < op.size(); j++) // 스택에 괄호 있으면
+                    {
+                        if (op[j] == '(') { //괄호 안  연산자 출력
+                            if (op.size() - 1 == j) { // 괄호 위에 아무것도 없으면
+                            }
+                            else {
+                                for (int k = op.size() - 1; k >= j + 1; k--)
+                                {
+                                    num += op[k];
+                                    num += " "; // 구분
+                                    op.pop_back();
+                                }
+                            }
+                            ox++;
+                        }
+                    }
+                    if (ox == 0) // 괄호 없으면 스택의 끝까지 출력
+                    {
+                        for (int k = op.size() - 1; k >= 0; k--)
+                        {
+                            num += op[k]; // 출력
+                            num += " "; // 구분
+                            op.pop_back();
+                        }
+                    }
+                    op.push_back((char)message[i]); // push
+                    ox = 0;
+                }
+                else if (message[i] == ')') { // 닫는 괄호 나오면 여는 괄호까지 모든 op비우기
+                    for (int j = 0; j < op.size(); j++)
+                    {
+                        if (op[j] == '(') {
+                            for (int k = op.size() - 1; k >= j + 1; k--)
+                            {
+                                num += op[k];//출력
+                                num += " "; // 구분
+                                op.pop_back();
+                            }
+                            op.pop_back();
+                        }
+                    }
+                }
+            }
+        }
+        if (i == message.size()) { // message의 식이 끝나면 벡터에 남아있는 연산자 모두 num에 출력
+            for (int j = op.size() - 1; j >= 0; j--)
+            {
+                num += op[j];
+                num += " "; // 구분
+            }
+        }
+        cout << num << endl;
+        return num;
+    }
+'''
