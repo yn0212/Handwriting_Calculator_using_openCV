@@ -45,9 +45,11 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 
 - x축으로 나눈 구간 10개의 평균을 구함. --> double avg(vector<double> v)   -->평균값이 3이하
 - y축으로 나눈 구간 10개의 평균을 구함 -- > double avg(vector<double> v) --> 평균값이 2이하
-- 객체의 size가 50이하이면 true
+- 객체의 size가 50이하이면 true  
 
+### 문자 n
 
+  
 :paperclip:계산기 구현 방법 
 -----------------
 
