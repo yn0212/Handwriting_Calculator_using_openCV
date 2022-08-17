@@ -26,9 +26,11 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 # Project algorithm
 ![image](https://user-images.githubusercontent.com/105347300/185038520-ed0d36f8-6631-4ec4-b6e5-09933acd10f1.png)
 
-- 계산기 구현 방법
+계산기 구현 방법
+-----------------
 
-식을 후위표기법으로 바꾸기 --- > string calc1();
+-식을 후위표기법으로 바꾸기 --- > string calc1();
+
 
 1. 숫자가 나오면 그대로 문자열에 입력한다.
 
@@ -42,7 +44,7 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 
 
 
-후위표기법 계산하기 --> double calc2(string str);
+-후위표기법 계산하기 --> double calc2(string str);
 
 
 1.문자열 앞에서부터 ' ' 공백을 기준으로 끊기
@@ -51,3 +53,8 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 
 3. 연산자이면 벡터의 마지막 요소와 마지막 전 요소끼리 연산후 두개의 요소를 pop하고 결과값을 벡터에 push
 
+
+
+# 계산기 code
+-식을 후위표기법으로 변환
+<>
