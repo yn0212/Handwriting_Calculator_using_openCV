@@ -35,7 +35,8 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 ![image](https://user-images.githubusercontent.com/105347300/185038520-ed0d36f8-6631-4ec4-b6e5-09933acd10f1.png)
 
 ## 두번째 구분
-### :bulb: 소수점
+### 📢 :loudspeaker: 외각선 1개
+#### :bulb: 소수점
 
 ![image](https://user-images.githubusercontent.com/105347300/185043097-6ed8e4e3-fdd6-421f-9afc-67835cf20ad1.png)
 
@@ -47,7 +48,7 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 - y축으로 나눈 구간 10개의 평균을 구함 -- > double avg(vector<double> v) --> 평균값이 2이하
 - 객체의 size가 50이하이면 true  
 
-### :bulb: 문자 n
+#### :bulb: 문자 n
 - x축으로 나눈 구간 10개의 평균을 구함. --> double avg(vector<double> v)   -->평균값이 3이하
 
 - y축으로 나눈 구간 10개의 평균을 구함 -- > '' --> 평균값이 2이하
@@ -56,7 +57,7 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 
 - 객체의 무게중심 을 기준으로 맨 아래 중앙에 객체가 없으면 true
 
-### :bulb: 문자 s
+#### :bulb: 문자 s
 - x축으로 나눈 구간 10개의 평균을 구함. --> double avg(vector<double> v)   -->평균값이 3이하
 
 - y축으로 나눈 구간 10개의 평균을 구함 -- > '' --> 평균값이 2이하
@@ -65,9 +66,71 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 
 - 객체를 무게중심을 기준으로 4등분 하고 , 왼쪽 위의 구간의 픽셀값255개수 x 5 < 오른쪽 위 구간 픽셀값255의 개수이면 true
 
+#### :bulb: 숫자 1
+                                                      
+![image](https://user-images.githubusercontent.com/105347300/185043793-ca4033e8-f49d-4f17-8b9d-c872ce2ece46.png)
+![image](https://user-images.githubusercontent.com/105347300/185043817-b5c1c7f8-0cfb-43cc-93cb-62d85afb1774.png)
 
- 
+- x축으로 나눈 구간 10개의 평균을 구함. --> double avg(vector<double> v)   -->평균값이 3이하이고
+
+- 소수점,n,s가 아니면 true
+
+#### :bulb: 문자 -
+
+  ![image](https://user-images.githubusercontent.com/105347300/185043928-880f8e5b-9925-48a4-984b-5bdc1b6e4b4d.png)
+- y축으로 나눈 구간들의 평균이 1이하일때 : 마이너스
+
+#### :bulb: 나누기
+- bool divide(Mat img,Mat centroids)
+
+- 무게 중심으로 객체를 자른다. -->4개로 나눠짐  
+ ![image](https://user-images.githubusercontent.com/105347300/185044020-428d8462-bca0-4ae7-bfb4-1fc3d1c6e5b2.png)
+
+- 구간 1의 픽셀값이 255인 개수 x 5 < 구간2의 픽셀값이 255인개수이면 true  
   
+#### :bulb: 더하기 +            
+- bool plus_d(Mat img)                               
+![image](https://user-images.githubusercontent.com/105347300/185044128-8ed406be-3158-4f8b-ac43-cff89a52b3d1.png)
+- 이 구간 안에 객체가 없으면 true
+- 구간 : 무게중심 기준 상대적인 구간 
+
+#### :bulb: 곱하기 x
+- bool mul(mat img,Mat centroids);                               
+![image](https://user-images.githubusercontent.com/105347300/185044273-83d1524b-7ed3-4c1c-97b3-de93feb4981f.png)
+- 무게중심을 기준으로 위 아래 양 옆 끝에 객체가 없으면 true                               
+- 구간 : 무게중심 기준 상대적인 구간                                
+                               
+#### :bulb: 괄호 ( , )   
+- bool parentheses(mat img, Mat centroids,int num);                               
+![image](https://user-images.githubusercontent.com/105347300/185044406-bc7e847a-3d2d-46c8-b441-3b7a0bb682d8.png)
+
+ ![image](https://user-images.githubusercontent.com/105347300/185044415-9af4023b-6750-4e69-a122-3e79d62c53a0.png)
+- 객체의 무게 중심을기준으로 설정한 이 구간에 객체 없으면 true
+- 구간 : 무게중심 기준 상대적인 구간                                    
+                               
+#### :bulb: 숫자 2    
+ ![image](https://user-images.githubusercontent.com/105347300/185044917-237ac316-6b8e-4f0e-aecb-988f03c3fc6c.png)
+
+ ![image](https://user-images.githubusercontent.com/105347300/185044477-ab5f2ab4-d560-4d2f-a2e2-60299a0409bc.png)
+- 무게중심 기준으로 y축으로 자른 왼쪽 부분의 외각선 이 2개
+![image](https://user-images.githubusercontent.com/105347300/185044524-618ce27b-37d4-4339-ad3f-af8881b5a0c9.png)
+- y축 9번째 평균개수가 최대값 or x축 평균개수(7~9)번의 반올림값이 같으면 true
+
+#### :bulb: 숫자 5
+- 무게중심 기준으로 y축으로 자른 왼쪽 부분의 외각선 이 2개
+- 숫자 2 가 아니면 true
+                               
+#### :bulb: 숫자 3                               
+![image](https://user-images.githubusercontent.com/105347300/185045705-b68694a5-d10e-45a3-8106-00dcd928870b.png)
+
+- 무게중심 기준으로 y축으로 자른 왼쪽 부분의 외각선 이 3개이면 true
+                               
+#### :bulb: 숫자 7                                                      
+- (x축 평균 개수 5~7번의 반올림 값이 같음 && 정수값이 같음) or y축 평균개수 6~8번의 반올림값이 같음                               
+                               
+                               
+                               
+                               
 :paperclip:계산기 구현 방법 
 -----------------
 
