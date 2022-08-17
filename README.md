@@ -69,6 +69,7 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 #### :bulb: 숫자 1
                                                       
 ![image](https://user-images.githubusercontent.com/105347300/185043793-ca4033e8-f49d-4f17-8b9d-c872ce2ece46.png)
+                                                      
 ![image](https://user-images.githubusercontent.com/105347300/185043817-b5c1c7f8-0cfb-43cc-93cb-62d85afb1774.png)
 
 - x축으로 나눈 구간 10개의 평균을 구함. --> double avg(vector<double> v)   -->평균값이 3이하이고
@@ -77,26 +78,29 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 
 #### :bulb: 문자 -
 
-  ![image](https://user-images.githubusercontent.com/105347300/185043928-880f8e5b-9925-48a4-984b-5bdc1b6e4b4d.png)
+![image](https://user-images.githubusercontent.com/105347300/185043928-880f8e5b-9925-48a4-984b-5bdc1b6e4b4d.png)
 - y축으로 나눈 구간들의 평균이 1이하일때 : 마이너스
 
 #### :bulb: 나누기
 - bool divide(Mat img,Mat centroids)
 
 - 무게 중심으로 객체를 자른다. -->4개로 나눠짐  
- ![image](https://user-images.githubusercontent.com/105347300/185044020-428d8462-bca0-4ae7-bfb4-1fc3d1c6e5b2.png)
+![image](https://user-images.githubusercontent.com/105347300/185044020-428d8462-bca0-4ae7-bfb4-1fc3d1c6e5b2.png)
 
 - 구간 1의 픽셀값이 255인 개수 x 5 < 구간2의 픽셀값이 255인개수이면 true  
   
 #### :bulb: 더하기 +            
-- bool plus_d(Mat img)                               
+- bool plus_d(Mat img)      
+                               
 ![image](https://user-images.githubusercontent.com/105347300/185044128-8ed406be-3158-4f8b-ac43-cff89a52b3d1.png)
+                               
 - 이 구간 안에 객체가 없으면 true
 - 구간 : 무게중심 기준 상대적인 구간 
 
 #### :bulb: 곱하기 x
 - bool mul(mat img,Mat centroids);                               
 ![image](https://user-images.githubusercontent.com/105347300/185044273-83d1524b-7ed3-4c1c-97b3-de93feb4981f.png)
+                               
 - 무게중심을 기준으로 위 아래 양 옆 끝에 객체가 없으면 true                               
 - 구간 : 무게중심 기준 상대적인 구간                                
                                
@@ -104,19 +108,24 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 - bool parentheses(mat img, Mat centroids,int num);                               
 ![image](https://user-images.githubusercontent.com/105347300/185044406-bc7e847a-3d2d-46c8-b441-3b7a0bb682d8.png)
 
- ![image](https://user-images.githubusercontent.com/105347300/185044415-9af4023b-6750-4e69-a122-3e79d62c53a0.png)
+![image](https://user-images.githubusercontent.com/105347300/185044415-9af4023b-6750-4e69-a122-3e79d62c53a0.png)
+                               
 - 객체의 무게 중심을기준으로 설정한 이 구간에 객체 없으면 true
 - 구간 : 무게중심 기준 상대적인 구간                                    
                                
 #### :bulb: 숫자 2    
- ![image](https://user-images.githubusercontent.com/105347300/185044917-237ac316-6b8e-4f0e-aecb-988f03c3fc6c.png)
+![image](https://user-images.githubusercontent.com/105347300/185044917-237ac316-6b8e-4f0e-aecb-988f03c3fc6c.png)
 
- ![image](https://user-images.githubusercontent.com/105347300/185044477-ab5f2ab4-d560-4d2f-a2e2-60299a0409bc.png)
+![image](https://user-images.githubusercontent.com/105347300/185044477-ab5f2ab4-d560-4d2f-a2e2-60299a0409bc.png)
+                               
 - 무게중심 기준으로 y축으로 자른 왼쪽 부분의 외각선 이 2개
 ![image](https://user-images.githubusercontent.com/105347300/185044524-618ce27b-37d4-4339-ad3f-af8881b5a0c9.png)
+                               
 - y축 9번째 평균개수가 최대값 or x축 평균개수(7~9)번의 반올림값이 같으면 true
 
 #### :bulb: 숫자 5
+![image](https://user-images.githubusercontent.com/105347300/185047521-c2efba72-d853-4588-ab1a-50c5f45b3e5b.png)
+
 - 무게중심 기준으로 y축으로 자른 왼쪽 부분의 외각선 이 2개
 - 숫자 2 가 아니면 true
                                
@@ -130,40 +139,45 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
                                
 ### :loudspeaker: 외각선 2개
 #### :bulb: 숫자 9
- ![image](https://user-images.githubusercontent.com/105347300/185046416-3b1ed92f-8c69-4f9c-a543-c34bc65b585c.png)
+![image](https://user-images.githubusercontent.com/105347300/185046416-3b1ed92f-8c69-4f9c-a543-c34bc65b585c.png)
 
- ![image](https://user-images.githubusercontent.com/105347300/185046099-03cc5621-e865-40fc-bb78-43ef6f2c3e03.png)
+![image](https://user-images.githubusercontent.com/105347300/185046099-03cc5621-e865-40fc-bb78-43ef6f2c3e03.png)
 
 ![image](https://user-images.githubusercontent.com/105347300/185045989-a0513a3d-4f21-460f-9f11-decc4ffacc5b.png)
+                               
  - 객체를 무게중심 기준 x축 방향 으로 자른 위쪽 부분 외각선 개수 2개 이고 y축 6~8번 평균개수의 정수가 같거나 반올림한 수가 같으면 true   
 
 #### :bulb: 숫자 6                               
 ![image](https://user-images.githubusercontent.com/105347300/185046298-9b854151-b14b-481e-8b10-c3235fad7461.png)
+                               
 ![image](https://user-images.githubusercontent.com/105347300/185046382-3db0ca9a-b42a-4951-adc2-2d73d7a04087.png)
                                
 - 객체를 무게중심 기준 x축 방향 으로 자른 위쪽 부분 외각선 개수 2개 이고 y축 6~8번 평균개수의 정수가 같거나 반올림한 수가 같지 않으면 true                                   
  
- #### :bulb: 숫자 4  
-  ![image](https://user-images.githubusercontent.com/105347300/185046637-e61b05a2-79b6-4d40-9568-1c696dcb7b2a.png)
- ![image](https://user-images.githubusercontent.com/105347300/185046475-dc021ddc-1fde-448f-ba03-0f913d541c11.png)
+#### :bulb: 숫자 4  
+![image](https://user-images.githubusercontent.com/105347300/185046637-e61b05a2-79b6-4d40-9568-1c696dcb7b2a.png)
+                               
+![image](https://user-images.githubusercontent.com/105347300/185046475-dc021ddc-1fde-448f-ba03-0f913d541c11.png)
+                               
 ![image](https://user-images.githubusercontent.com/105347300/185046495-f211c129-61bf-414b-b74e-df037acd6c27.png)
 
 - 이 부분에 객체 없고 , x축 평균개수 8~9번이 같으면 true                               
 - 이 구간 : 무게중심기준 상대적인 구간                               
 
                                
- #### :bulb: 숫자 0 
-                               ![image](https://user-images.githubusercontent.com/105347300/185046783-7922c76f-7d8a-4048-a219-b3d384cfcb79.png)
+#### :bulb: 숫자 0 
+![image](https://user-images.githubusercontent.com/105347300/185046783-7922c76f-7d8a-4048-a219-b3d384cfcb79.png)
+                               
 ![image](https://user-images.githubusercontent.com/105347300/185046819-ee92865e-4f49-457a-a6d6-405fe1cc4f56.png)
 
 ![image](https://user-images.githubusercontent.com/105347300/185046675-b280a4b9-6950-4889-acf9-fe47c29b91e5.png)
+                               
 - y축 평균값 4~6이 같고 가운데 부분에 객체가없고 , 무게중심 의 맨 아래 구간에 객체가 있으면 true
       
                                
- #### :bulb: 문자 A
-                               ![image](https://user-images.githubusercontent.com/105347300/185047001-66a0b667-5c77-430d-aaec-d4a2b6e30911.png)
-
-                               
+#### :bulb: 문자 A
+![image](https://user-images.githubusercontent.com/105347300/185047001-66a0b667-5c77-430d-aaec-d4a2b6e30911.png)
+                              
 - y축 평균값 4~6이 같고 가운데 부분에 객체가없고 , 무게중심 의 맨 아래 구간에 객체가 없으면으면 true                               
  
 ### :loudspeaker: 외각선 3개
