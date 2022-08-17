@@ -35,7 +35,7 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 ![image](https://user-images.githubusercontent.com/105347300/185038520-ed0d36f8-6631-4ec4-b6e5-09933acd10f1.png)
 
 ## 두번째 구분
-### 📢 :loudspeaker: 외각선 1개
+### :loudspeaker: 외각선 1개
 #### :bulb: 소수점
 
 ![image](https://user-images.githubusercontent.com/105347300/185043097-6ed8e4e3-fdd6-421f-9afc-67835cf20ad1.png)
@@ -128,8 +128,46 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 #### :bulb: 숫자 7                                                      
 - (x축 평균 개수 5~7번의 반올림 값이 같음 && 정수값이 같음) or y축 평균개수 6~8번의 반올림값이 같음                               
                                
+### :loudspeaker: 외각선 2개
+#### :bulb: 숫자 9
+ ![image](https://user-images.githubusercontent.com/105347300/185046416-3b1ed92f-8c69-4f9c-a543-c34bc65b585c.png)
+
+ ![image](https://user-images.githubusercontent.com/105347300/185046099-03cc5621-e865-40fc-bb78-43ef6f2c3e03.png)
+
+![image](https://user-images.githubusercontent.com/105347300/185045989-a0513a3d-4f21-460f-9f11-decc4ffacc5b.png)
+ - 객체를 무게중심 기준 x축 방향 으로 자른 위쪽 부분 외각선 개수 2개 이고 y축 6~8번 평균개수의 정수가 같거나 반올림한 수가 같으면 true   
+
+#### :bulb: 숫자 6                               
+![image](https://user-images.githubusercontent.com/105347300/185046298-9b854151-b14b-481e-8b10-c3235fad7461.png)
+![image](https://user-images.githubusercontent.com/105347300/185046382-3db0ca9a-b42a-4951-adc2-2d73d7a04087.png)
                                
+- 객체를 무게중심 기준 x축 방향 으로 자른 위쪽 부분 외각선 개수 2개 이고 y축 6~8번 평균개수의 정수가 같거나 반올림한 수가 같지 않으면 true                                   
+ 
+ #### :bulb: 숫자 4  
+  ![image](https://user-images.githubusercontent.com/105347300/185046637-e61b05a2-79b6-4d40-9568-1c696dcb7b2a.png)
+ ![image](https://user-images.githubusercontent.com/105347300/185046475-dc021ddc-1fde-448f-ba03-0f913d541c11.png)
+![image](https://user-images.githubusercontent.com/105347300/185046495-f211c129-61bf-414b-b74e-df037acd6c27.png)
+
+- 이 부분에 객체 없고 , x축 평균개수 8~9번이 같으면 true                               
+- 이 구간 : 무게중심기준 상대적인 구간                               
+
                                
+ #### :bulb: 숫자 0 
+                               ![image](https://user-images.githubusercontent.com/105347300/185046783-7922c76f-7d8a-4048-a219-b3d384cfcb79.png)
+![image](https://user-images.githubusercontent.com/105347300/185046819-ee92865e-4f49-457a-a6d6-405fe1cc4f56.png)
+
+![image](https://user-images.githubusercontent.com/105347300/185046675-b280a4b9-6950-4889-acf9-fe47c29b91e5.png)
+- y축 평균값 4~6이 같고 가운데 부분에 객체가없고 , 무게중심 의 맨 아래 구간에 객체가 있으면 true
+      
+                               
+ #### :bulb: 문자 A
+                               ![image](https://user-images.githubusercontent.com/105347300/185047001-66a0b667-5c77-430d-aaec-d4a2b6e30911.png)
+
+                               
+- y축 평균값 4~6이 같고 가운데 부분에 객체가없고 , 무게중심 의 맨 아래 구간에 객체가 없으면으면 true                               
+ 
+### :loudspeaker: 외각선 3개
+#### :bulb: 숫자 8                               
                                
 :paperclip:계산기 구현 방법 
 -----------------
