@@ -119,6 +119,7 @@ youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 ![image](https://user-images.githubusercontent.com/105347300/185044477-ab5f2ab4-d560-4d2f-a2e2-60299a0409bc.png)
                                
 - 무게중심 기준으로 y축으로 자른 왼쪽 부분의 외각선 이 2개
+                               
 ![image](https://user-images.githubusercontent.com/105347300/185044524-618ce27b-37d4-4339-ad3f-af8881b5a0c9.png)
                                
 - y축 9번째 평균개수가 최대값 or x축 평균개수(7~9)번의 반올림값이 같으면 true
