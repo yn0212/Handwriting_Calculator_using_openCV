@@ -14,16 +14,16 @@ https://user-images.githubusercontent.com/105347300/185037897-1304241e-e89f-455f
 
 youtube :  https://www.youtube.com/watch?v=RH3HuNRTRrU
 
-#Project Description
+# Project Description
 - OpenCV를 활용해 사용자가 필기체로 입력한 수식을 계산해주는 계산기 프로그램이다.
 
-#Project function
+# Project function
 - GUI : 사용자의 수식을 입력 받아 저장하는 기능
 - 문자인식 : 20개의 문자를 인식하는 기능
   0,1,2,3,4,5,6,7,8,9,.(소수점),A,n,s,+,-,/,x,(,)
 - 계산기 기능 : 인식된 수식을 계산하여 결과를 출력하는 기능 ,ANS,CE,AC 기능
 
-#Project algorithm
+# Project algorithm
 ![image](https://user-images.githubusercontent.com/105347300/185038520-ed0d36f8-6631-4ec4-b6e5-09933acd10f1.png)
 
 -계산기 구현 방법
